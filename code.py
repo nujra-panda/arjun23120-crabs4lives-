@@ -52,7 +52,8 @@ def efficient(distance_list):
             break
     return line_list[minindex]
 ans1=efficient(distance_list)
-print(ans1)
+print('Answer for the objective one is : ')
+print('y =', ans1[0], 'x +', ans1[1])
 #calculating the line which satisfies the condition in objective two, it is the line stored in the variable taskTwoAnswer.
 #objective two
 distance_list2=[]
@@ -67,7 +68,8 @@ for i in range(0,len(distance_list2)):
         minindex=i
         break
 taskTwoanswer = line_list[minindex]
-print(taskTwoanswer)
+print('Answer for the objective two is : ')
+print('y =', taskTwoanswer[0], 'x +', taskTwoanswer[1])
 #calculating the line which satisfies the condition in objective three, it is the line stored in the variable ans3.
 #objective three
 distance_list3=distance_list
@@ -80,7 +82,9 @@ def multiple_efficient(l,k):
         distance_list3.pop(distance_list3.index(efficient(distance_list3)))
     return l
 ans3=multiple_efficient(taskThreeAnswer,k)
+print('Answer for the objective three is : ')
 print(ans3)
+print('where the values are int the form [m,c] for the line y = mx + c')
 ans3sub1 = ans3[0]
 ans3sub2 = ans3[1]
 
