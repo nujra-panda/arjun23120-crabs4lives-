@@ -7,3 +7,5 @@ Now, inside of the code the correct file directories for the text files should b
 
 
 THE FILES OF THE DATASET DOWNLOADED OFF THE INTERNET ARE UPLOADED ON GITHUB AS WELL.
+
+NOTE : we are using k(which is the number of (close to) efficient lines we need to output as 3. Please change the number of possible solutions you want in the line 74 of the code.
