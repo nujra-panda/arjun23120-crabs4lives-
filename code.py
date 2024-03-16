@@ -73,14 +73,21 @@ print('y =', taskTwoanswer[0], 'x +', taskTwoanswer[1])
 #calculating the line which satisfies the condition in objective three, it is the line stored in the variable ans3.
 #objective three
 distance_list3=distance_list
+newlist= []
+for i in distance_list3:
+    newlist.append(i)
 taskThreeAnswer=[]
-k = 3
+k = 5
 def multiple_efficient(l,k):
     l=[]
-    distance_list3.sort()
+    newlist.sort()
     for i in range(k):
-        l.append(efficient(distance_list3))
-        distance_list3.pop(0)
+        minVal = newlist[0]
+        for j in range(len(distance_list3)):
+            if distance_list3[j] == minVal:
+                l.append(line_list[j])
+        newlist.pop(0)
+        distance_list3.pop(distance_list3.index(minVal))
     return l
 ans3=multiple_efficient(taskThreeAnswer,k)
 print('Answer for the objective three is : ')
