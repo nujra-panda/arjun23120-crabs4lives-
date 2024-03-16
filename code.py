@@ -56,10 +56,10 @@ print(efficient(distance_list))
 #objective two
 distance_list2=[]
 for i in line_list:
-    distance_list = []
+    dist_list = []
     for j in range(0,len(point_list)):
-        distance_list.append(distance(point_list[j],i))
-    distance_list2.append(max(distance_list))
+        dist_list.append(distance(point_list[j],i))
+    distance_list2.append(max(dist_list))
 min_distance=min(distance_list2)
 for i in range(0,len(distance_list2)):
     if distance_list2[i]==min_distance:
@@ -69,7 +69,7 @@ taskTwoanswer = line_list[minindex]
 print(taskTwoanswer)
 #calculating the line which satisfies the condition in objective three, it is the line stored in the variable ans3.
 #objective three
-distance_list3=[]
+distance_list3=distance_list
 taskThreeAnswer=[]
 k = 3
 def multiple_efficient(k):
@@ -84,6 +84,6 @@ print(ans3)
 #y_values = [point[0] for point in point_list]
 #plt.scatter(x_values, y_values)
 #plt.xlabel('Longitude')
-#lt.ylabel('Latitude')
+#plt.ylabel('Latitude')
 #plt.title('Points')
 #plt.show()
