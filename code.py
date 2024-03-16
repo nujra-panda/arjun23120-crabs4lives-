@@ -86,8 +86,6 @@ ans3=multiple_efficient(taskThreeAnswer,k)
 print('Answer for the objective three is : ')
 print(ans3)
 print('where the values are int the form [m,c] for the line y = mx + c')
-ans3sub1 = ans3[0]
-
 
 
 #ans1, taskTwoanswer, ans3 are the answers to the three objectives respectively.
@@ -95,8 +93,7 @@ ans1[0] = [-((ans1[1])/ans1[0]), 0]
 ans1[1] = [0, ans1[1]]
 taskTwoanswer[0] = [-((taskTwoanswer[1])/taskTwoanswer[0]), 0] 
 taskTwoanswer[1] = [0, taskTwoanswer[1]]
-ans3sub1[0] = [-((ans3sub1[1])/ans3sub1[0]), 0]
-ans3sub1[1] = [0, ans3sub1[1]]
+
 
 # Plotting the points
 x_values = [point[1] for point in point_list]
@@ -111,10 +108,6 @@ plt.plot(x_values_line1, y_values_line1, color='r')  # Plotting line1 in red col
 x_values_line2 = [point[1] for point in taskTwoanswer]
 y_values_line2 = [point[0] for point in taskTwoanswer]
 plt.plot(x_values_line2, y_values_line2, color='g')  # Plotting line2 in green color
-
-x_values_line3 = [point[1] for point in ans3sub1]
-y_values_line3 = [point[0] for point in ans3sub1]
-plt.plot(x_values_line3, y_values_line3, color='b')  # Plotting line3 in blue color
 
 plt.xlabel('Longitude')
 plt.ylabel('Latitude')
