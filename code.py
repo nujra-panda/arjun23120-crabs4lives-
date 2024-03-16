@@ -51,7 +51,8 @@ def efficient(distance_list):
             minindex=i
             break
     return line_list[minindex]
-print(efficient(distance_list))
+ans1=efficient(distance_list)
+print(ans1)
 #calculating the line which satisfies the condition in objective two, it is the line stored in the variable taskTwoAnswer.
 #objective two
 distance_list2=[]
@@ -79,11 +80,34 @@ def multiple_efficient(k):
 ans3=taskThreeAnswer
 print(ans3)
 
+
+#ans1, taskTwoanswer, ans3 are the answers to the three objectives respectively.
+ans1[0] = [-((ans1[1])/ans1[0]), 0]
+ans1[1] = [0, ans1[1]]
+taskTwoanswer[0] = [-((taskTwoanswer[1])/taskTwoanswer[0]), 0] 
+taskTwoanswer[1] = [0, taskTwoanswer[1]]
+ans3[0] = [-((ans3[1])/ans3[0]), 0]
+ans3[1] = [0, ans3[1]]
+
 # Plotting the points
-#x_values = [point[1] for point in point_list]
-#y_values = [point[0] for point in point_list]
-#plt.scatter(x_values, y_values)
-#plt.xlabel('Longitude')
-#plt.ylabel('Latitude')
-#plt.title('Points')
-#plt.show()
+x_values = [point[1] for point in point_list]
+y_values = [point[0] for point in point_list]
+plt.scatter(x_values, y_values)
+
+# Plotting the lines
+x_values_line1 = [point[1] for point in ans1]
+y_values_line1 = [point[0] for point in ans1]
+plt.plot(x_values_line1, y_values_line1, color='r')  # Plotting line1 in red color
+
+x_values_line2 = [point[1] for point in taskTwoanswer]
+y_values_line2 = [point[0] for point in taskTwoanswer]
+plt.plot(x_values_line2, y_values_line2, color='g')  # Plotting line2 in green color
+
+x_values_line3 = [point[1] for point in ans3]
+y_values_line3 = [point[0] for point in ans3]
+plt.plot(x_values_line3, y_values_line3, color='b')  # Plotting line3 in blue color
+
+plt.xlabel('Longitude')
+plt.ylabel('Latitude')
+plt.title('Points and Lines')
+plt.show()
