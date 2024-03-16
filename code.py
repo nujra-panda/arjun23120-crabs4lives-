@@ -87,7 +87,8 @@ print('Answer for the objective three is : ')
 print(ans3)
 print('where the values are int the form [m,c] for the line y = mx + c')
 ans3sub1 = ans3[0]
-ans3sub2 = ans3[1]
+
+
 
 #ans1, taskTwoanswer, ans3 are the answers to the three objectives respectively.
 ans1[0] = [-((ans1[1])/ans1[0]), 0]
@@ -96,8 +97,7 @@ taskTwoanswer[0] = [-((taskTwoanswer[1])/taskTwoanswer[0]), 0]
 taskTwoanswer[1] = [0, taskTwoanswer[1]]
 ans3sub1[0] = [-((ans3sub1[1])/ans3sub1[0]), 0]
 ans3sub1[1] = [0, ans3sub1[1]]
-ans3sub2[0] = [-((ans3sub2[1])/ans3sub2[0]), 0]
-ans3sub2[1] = [0, ans3sub2[1]]
+
 # Plotting the points
 x_values = [point[1] for point in point_list]
 y_values = [point[0] for point in point_list]
@@ -115,10 +115,6 @@ plt.plot(x_values_line2, y_values_line2, color='g')  # Plotting line2 in green c
 x_values_line3 = [point[1] for point in ans3sub1]
 y_values_line3 = [point[0] for point in ans3sub1]
 plt.plot(x_values_line3, y_values_line3, color='b')  # Plotting line3 in blue color
-
-x_values_line4 = [point[1] for point in ans3sub2]
-y_values_line4 = [point[0] for point in ans3sub2]
-plt.plot(x_values_line4, y_values_line4, color='y')  # Plotting line3 in yellow color
 
 plt.xlabel('Longitude')
 plt.ylabel('Latitude')
