@@ -76,7 +76,7 @@ k = 3
 def multiple_efficient(k):
     for i in range(k):
         taskThreeAnswer.append(efficient(distance_list3))
-        distance_list3.pop(distance_list3.index(efficient(distance_list3)))
+        #distance_list3.pop(distance_list3.index(efficient(distance_list3)))
 ans3=taskThreeAnswer
 print(ans3)
 
