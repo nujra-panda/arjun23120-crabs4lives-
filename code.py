@@ -65,12 +65,14 @@ for i in range(0,len(distance_list2)):
         minindex=i
         break
 taskTwoanswer = line_list[minindex]
+print(taskTwoanswer)
 #calculating the line which satisfies the condition in objective three, it is the line stored in the variable ans3.
 #objective three
 distance_list3=[]
 taskThreeAnswer=[]
 def multiple_efficient(k):
     for i in range(k):
-        taksThreeAnswer.append(efficient(distance_list3))
+        taskThreeAnswer.append(efficient(distance_list3))
         distance_list3.pop(distance_list3.index(efficient(distance_list3)))
 ans3=taskThreeAnswer
+print(ans3)
