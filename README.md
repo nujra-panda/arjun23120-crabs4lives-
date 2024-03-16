@@ -11,3 +11,4 @@ THE FILES OF THE DATASET DOWNLOADED OFF THE INTERNET ARE UPLOADED ON GITHUB AS W
 NOTE : we are using k(which is the number of (close to) efficient lines we need to output as 3. Please change the number of possible solutions you want in the line 77 of the code.
 Please make sure k>=2
 The code might take a few mintutes to run completely to give the final answer and the plot.
+In objective 3 the answer given is the most efficient line out of k lines.
