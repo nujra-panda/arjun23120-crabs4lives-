@@ -77,9 +77,10 @@ taskThreeAnswer=[]
 k = 3
 def multiple_efficient(l,k):
     l=[]
+    distance_list3.sort()
     for i in range(k):
         l.append(efficient(distance_list3))
-        distance_list3.pop(distance_list3.index(efficient(distance_list3)))
+        distance_list3.pop(0)
     return l
 ans3=multiple_efficient(taskThreeAnswer,k)
 print('Answer for the objective three is : ')
