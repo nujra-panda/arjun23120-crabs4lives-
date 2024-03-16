@@ -71,6 +71,7 @@ print(taskTwoanswer)
 #objective three
 distance_list3=[]
 taskThreeAnswer=[]
+k = 3
 def multiple_efficient(k):
     for i in range(k):
         taskThreeAnswer.append(efficient(distance_list3))
