@@ -10,9 +10,13 @@ features_of_interest = ["Latitude", "Longitude"]
 a=0
 long_list=list(california_housing.frame.Longitude)
 lat_list=list(california_housing.frame.Latitude)
+f1=open("longitude.txt","r")
+f2=open("latitude.txt","r")
 for i in lat_list:
     print(i,end=" ")
-print(a)
+    f1.write(i)
 for i in long_list:
     print(i,end=" ")
-print(a)
+    f2.write(i)
+f1.close()
+f2.close()
