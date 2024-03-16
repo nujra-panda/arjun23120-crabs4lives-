@@ -58,7 +58,7 @@ distance_list2=[]
 for i in line_list:
     distance_list = []
     for j in range(0,len(point_list)):
-        distance_list[j]=distance(point_list[j],i)
+        distance_list.append(distance(point_list[j],i))
     distance_list2.append(max(distance_list))
 min_distance=min(distance_list2)
 for i in range(0,len(distance_list2)):
